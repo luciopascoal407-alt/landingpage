@@ -285,7 +285,7 @@ function App() {
             <div className="bg-gradient-to-r from-pink-50 to-purple-50 p-8 rounded-2xl">
               <div className="flex items-start space-x-6">
                 <img 
-                  src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face" 
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face" 
                   alt="Juliana M." 
                   className="w-16 h-16 rounded-full object-cover shadow-lg"
                 />
@@ -330,9 +330,11 @@ function App() {
             
             <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-8 rounded-2xl">
               <div className="flex items-start space-x-6">
-                <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center shadow-lg">
-                  <span className="text-white font-bold text-xl">B</span>
-                </div>
+                <img 
+                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face" 
+                  alt="Bruna L." 
+                  className="w-16 h-16 rounded-full object-cover shadow-lg"
+                />
                 <div className="flex-1">
                   <p className="text-gray-700 mb-4 text-lg italic">
                     "Com o Kanban, minha cabeça fica leve. Minha rotina agora tem começo, meio e fim."
