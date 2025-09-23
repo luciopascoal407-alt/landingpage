@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 
 const removeFloating = () => {
 
@@ -24,6 +25,28 @@ observer.observe(document.body, { childList: true, subtree: true });
 import { CheckCircle, Star, Shield, Clock, Heart, Gift, CreditCard, Smartphone } from 'lucide-react';
 
 function App() {
+  const [timeLeft, setTimeLeft] = useState(9 * 60 + 59); // 9:59 em segundos
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft((prevTime) => {
+        if (prevTime <= 0) {
+          clearInterval(timer);
+          return 0;
+        }
+        return prevTime - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const formatTime = (seconds: number) => {
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    return `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+  };
+
   const handleCTAClick = () => {
     window.open('https://pay.cakto.com.br/k9smfbw_556174?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=', '_blank');
   };
@@ -360,6 +383,16 @@ function App() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
             💥 Oferta Especial por Tempo Limitado
           </h2>
+          
+          <div className="bg-red-600 text-white p-6 rounded-2xl mb-8 shadow-xl">
+            <div className="text-center">
+              <p className="text-lg font-semibold mb-2">⏰ Esta oferta expira em:</p>
+              <div className="text-4xl md:text-5xl font-bold font-mono tracking-wider">
+                {formatTime(timeLeft)}
+              </div>
+              <p className="text-sm mt-2 opacity-90">Não perca esta oportunidade única!</p>
+            </div>
+          </div>
           
           <div className="bg-white rounded-2xl shadow-2xl p-8 mb-8">
             <div className="mb-6">
