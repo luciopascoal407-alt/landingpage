@@ -285,7 +285,7 @@ function App() {
             <div className="bg-gradient-to-r from-pink-50 to-purple-50 p-8 rounded-2xl">
               <div className="flex items-start space-x-6">
                 <img 
-                  src="https://i.imgur.com/4AJVDM3.png" 
+                  src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face" 
                   alt="Juliana M." 
                   className="w-16 h-16 rounded-full object-cover shadow-lg"
                 />
@@ -308,7 +308,7 @@ function App() {
             <div className="bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-2xl">
               <div className="flex items-start space-x-6">
                 <img 
-                  src="https://i.imgur.com/3Msclg0.png" 
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face" 
                   alt="Carla R." 
                   className="w-16 h-16 rounded-full object-cover shadow-lg"
                 />
