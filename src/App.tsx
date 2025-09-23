@@ -445,6 +445,54 @@ function App() {
         </div>
       </section>
 
+      {/* Author Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl p-8 shadow-xl">
+            <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
+              <div className="flex-shrink-0">
+                <img 
+                  src="https://i.imgur.com/DAys8oV.png" 
+                  alt="Manoela Guimarães" 
+                  className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-lg border-4 border-white"
+                />
+              </div>
+              
+              <div className="flex-1 text-center md:text-left">
+                <div className="mb-4">
+                  <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">@manu_organizada</h3>
+                </div>
+                
+                <div className="text-gray-700 leading-relaxed space-y-4">
+                  <p>
+                    <strong>"Oi! Sou a Manoela Guimarães</strong>, uma mulher multitarefa de PE: mãe 
+                    dedicada a três crianças, esposa apaixonada, Dona de DogHouse e empreendedora digital. 
+                    Conciliar todas as minhas responsabilidades nunca foi simples, mas eu enfrentei o desafio 
+                    e mergulhei nos estudos sobre produtividade.
+                  </p>
+                  
+                  <p>
+                    Aprendi a arte de fazer mais com menos tempo, e agora estou 
+                    empolgada em compartilhar esse projeto especial com você. Ele foi inspirado nas 
+                    poderosas técnicas ensinadas por Timothy Ferriss em seu curso revolucionário: 
+                    <strong>'Trabalhe 2 horas por dia'</strong>.
+                  </p>
+                  
+                  <p>
+                    Juntas, vamos conquistar o equilíbrio, alcançar nossos 
+                    objetivos e desfrutar de uma vida plena e realizada.
+                  </p>
+                  
+                  <p className="text-xl font-bold text-pink-600">
+                    Vamos nessa? 💪"
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-12">
         <div className="max-w-4xl mx-auto px-4 text-center">
