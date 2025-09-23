@@ -452,7 +452,7 @@ function App() {
             <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
               <div className="flex-shrink-0">
                 <img 
-                  src="https://i.imgur.com/DAys8oV.png" 
+                  src="https://i.imgur.com/DAys8oV.jpg" 
                   alt="Manoela Guimarães" 
                   className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-lg border-4 border-white"
                 />
