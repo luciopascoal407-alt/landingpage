@@ -166,23 +166,14 @@ function App() {
               {[
                 "Já chorou de frustração ao ver a casa bagunçada, sem saber por onde começar",
                 "Se sente cansada e culpada por não dar conta de tudo",
-                "Tenta mil métodos diferentes, mas sente que está sempre falhando",
-                "Acredita que a organização da casa não pode consumir sua vida"
+                "Tenta mil métodos diferentes, mas sente que está sempre falhando"
               ].map((item, index) => (
-                <div key={index} className="flex items-start space-x-3 p-4 bg-pink-50 rounded-xl">
-                  <Heart className="text-pink-500 mt-1 flex-shrink-0" size={20} />
-                  <p className="text-gray-700">{item}</p>
+                <div key={index} className="flex items-start space-x-3">
+                  <CheckCircle className="text-green-500 flex-shrink-0 mt-1" size={20} />
+                  <span className="text-gray-700">{item}</span>
                 </div>
               ))}
             </div>
-          </div>
-          
-          <div className="flex justify-center">
-            <img 
-              src="https://i.imgur.com/sWdeRem.png" 
-              alt="Organização doméstica" 
-              className="rounded-2xl shadow-xl max-w-full h-auto"
-            />
           </div>
         </div>
       </section>
@@ -232,6 +223,24 @@ function App() {
                 </div>
               </div>
             ))}
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-6 mt-8">
+            <div className="bg-white p-4 rounded-xl shadow-lg">
+              <img 
+                src="https://i.imgur.com/z4tTnri.png" 
+                alt="Material de organização doméstica" 
+                className="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
+            
+            <div className="bg-white p-4 rounded-xl shadow-lg">
+              <img 
+                src="https://i.imgur.com/64jMT6O.png" 
+                alt="Planner de organização" 
+                className="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
           </div>
           
           <div className="text-center">
