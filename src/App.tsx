@@ -96,11 +96,18 @@ function App() {
           </button>
           
           <div className="flex justify-center mb-8">
-            <img 
-              src="https://i.imgur.com/Rx1xpD5.png" 
-              alt="Mulher organizada e feliz" 
-              className="rounded-2xl shadow-xl max-w-full h-auto"
-            />
+            <div className="w-full max-w-md mx-auto">
+              <div className="relative w-full" style={{ paddingBottom: '177.78%' }}>
+                <iframe
+                  src="https://www.youtube.com/embed/ik1r-a0hGeQ"
+                  title="A Rotina que Toda Mulher Precisa"
+                  className="absolute top-0 left-0 w-full h-full rounded-2xl shadow-xl"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </section>
