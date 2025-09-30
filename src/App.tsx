@@ -1,5 +1,3 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
 
 const removeFloating = () => {
 
@@ -20,7 +18,9 @@ removeFloating();
 const observer = new MutationObserver(removeFloating);
 
 observer.observe(document.body, { childList: true, subtree: true });
-    
+
+import React from 'react';
+import { useState, useEffect } from 'react';
 
 import { CheckCircle, Star, Shield, Clock, Heart, Gift, CreditCard, Smartphone } from 'lucide-react';
 
