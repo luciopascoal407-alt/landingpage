@@ -234,6 +234,24 @@ function App() {
             ))}
           </div>
           
+          <div className="grid md:grid-cols-2 gap-6 mt-8">
+            <div className="bg-white p-4 rounded-xl shadow-lg">
+              <img 
+                src="https://i.imgur.com/z4tTnri.png" 
+                alt="Material de organização doméstica" 
+                className="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
+            
+            <div className="bg-white p-4 rounded-xl shadow-lg">
+              <img 
+                src="https://i.imgur.com/64jMT6O.png" 
+                alt="Planner de organização" 
+                className="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
+          </div>
+          
           <div className="text-center">
             <button 
               onClick={handleCTAClick}
