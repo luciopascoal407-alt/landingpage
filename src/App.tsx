@@ -172,7 +172,7 @@ function App() {
           
           <div className="flex justify-center">
             <img 
-              src="https://i.imgur.com/lm2uu0Q.png" 
+              src="https://i.imgur.com/sWdeRem.png" 
               alt="Organização doméstica" 
               className="rounded-2xl shadow-xl max-w-full h-auto"
             />
