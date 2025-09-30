@@ -1,4 +1,11 @@
 
+
+import React from 'react';
+import { useState, useEffect } from 'react';
+
+import { CheckCircle, Star, Shield, Clock, Heart, Gift, CreditCard, Smartphone } from 'lucide-react';
+
+
 const removeFloating = () => {
 
   document.querySelectorAll('[style="position: fixed"][style="bottom: 1rem"][style="right: 1rem"][style="z-index: 2147483647"]').forEach(el => el.remove());
@@ -19,10 +26,6 @@ const observer = new MutationObserver(removeFloating);
 
 observer.observe(document.body, { childList: true, subtree: true });
 
-import React from 'react';
-import { useState, useEffect } from 'react';
-
-import { CheckCircle, Star, Shield, Clock, Heart, Gift, CreditCard, Smartphone } from 'lucide-react';
 
 function App() {
   const [timeLeft, setTimeLeft] = useState(9 * 60 + 59); // 9:59 em segundos
